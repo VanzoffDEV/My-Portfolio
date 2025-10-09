@@ -1,2 +1,2 @@
 # My-Portfolio
-A collection of my projects built with JavaScript, Python, C++, HTML &amp; CSS. Welcome to my coding journey!
+A collection of my projects built with  HTML5 ,CSS. Welcome to my coding journey!
