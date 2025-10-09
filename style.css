@@ -45,7 +45,7 @@ html{
     width:100%;
     background-color:black;
     height: calc(100vh - 80px);
-    background-image:url("images/fundotela.png");
+    background-image:url("imagens/fundotela.png");
     display:flex;
     align-items:center;
     padding-left:10%;
