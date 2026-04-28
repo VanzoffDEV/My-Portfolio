@@ -1,93 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"/>
-
-    <title>Projeto Portfólio - Nosso Site (Meu Primeiro Projeto)</title>
+    <title>Abelardo | Desenvolvedor & Estrategista Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
-<body>
-    
-    <nav class="nav">
-        <ul class="nav-list">
-            <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#Sobre">Sobre</a>
-            </li>
-            <li>
-                <a href="#Projetos">Projetos</a>
-            </li>
-            <li>
-                <a href="#Contatos">Contatos</a>
-            </li>
-        </ul>
+<body class="bg-gray-50 text-gray-900">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-tighter">Vanzoff<span class="text-blue-600">DEV</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-blue-600 transition">Início</a>
+                <a href="#projetos" class="hover:text-blue-600 transition">Projetos</a>
+                <a href="#sobre" class="hover:text-blue-600 transition">Sobre</a>
+                <a href="#contato" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Contato</a>
+            </div>
+        </div>
     </nav>
 
-    <section id="home" class="main">
-        <div>
-            <h1>Olá,<br />Seja Bem Vindo(a)</h1>
-            <p>Saiba Como Admistrar Suas Redes Socias!!!</p>
-            <a href="#Projetos">
-                <button class="call-to-action">
-                    Veja Meus Projetos
-                </button>
-            </a>
-        </div>
-    </section>
-
-    <section id="Sobre" class="about">
-        <div>
-            <h2>Sobre</h2>
-            <p>
-                Quem é Ludmila Andrade Rodrigues De Lima Vanzoff
-                <br /> <br />
-                Com 8 anos de experiência no marketing digital, sou Social Media especializada em posicionar médicos e advogados de forma estratégica e profissional nas redes sociais. Minha missão é ir além da estética: entrego resultados reais através de conteúdo que fortalece autoridade, gera conexão com o público certo e impulsiona o crescimento de negócios na área da saúde e do direito.
-                <br /> <br />
-                Sou bacharel em Direito e Farmácia, com MBA em Marketing da Saúde e especializações em Marketing Jurídico. Essa formação multidisciplinar me permite entender com profundidade as necessidades, dores e exigências dos profissionais que atuam em áreas técnicas, reguladas e sensíveis.
-                <br /> <br />
-                Atuo com um modelo de atendimento diferenciado: personalizado, direto e estratégico. Ao contrário das agências que trabalham em massa, ofereço um acompanhamento próximo, focado em entregar clareza, consistência e presença digital de verdade — com conteúdo alinhado à ética, à linguagem do seu público e aos seus objetivos profissionais.
-                <br /> <br />
-                Se você é da saúde ou do direito e sente que precisa se posicionar melhor nas redes, mas não sabe por onde começar, posso te ajudar a transformar sua presença digital em autoridade, confiança e resultados.
-
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">
+                Transformando código em <span class="gradient-text">Soluções Reais</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed">
+                Estudante de ADS, Desenvolvedor Full-Stack e Sócio na Agência Vanzoff. 
+                Focado em criar interfaces de alta performance e estratégias digitais que geram valor.
             </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#projetos" class="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-gray-800 transition shadow-lg">Ver Projetos</a>
+                <a href="https://linkedin.com/in/SEU-PERFIL" target="_blank" class="px-8 py-4 bg-white border border-gray-200 rounded-xl font-semibold hover:bg-gray-50 transition shadow-sm">LinkedIn</a>
+            </div>
         </div>
-
-        <img src="imagens/SobreMila.jpg" alt="Foto mila Trabalhando" />
-
-    </section>
-    
-    <section id="Projetos" class="projects">
-        <h2>Meus Projetos</h2>
-        <p>Conheça Meus Últimos Projetos</p>
-        <div class="project-list">
-            <img src="imagens/Projeto4.jpg" alt="Foto do projeto 1" />
-
-            <img src="imagens/Projeto3.jpg" alt="Foto do projeto 2" />
-
-            <img src="imagens/Projeto2.jpg" alt="Foto do projeto 3" />
-
-            <img src="imagens/Projeto1.jpg" alt="Foto do projeto 4" />
-        </div>
-        <a href="https://www.instagram.com/p/DNQ8koSx2li/?utm_source=ig_web_button_share_sheet&igsh=NHdnbmtjOGphdjJ1" target="_blank">
-            <button class="button">Fale Conosco</button>
-
-        </a>
     </section>
 
-    <footer id="Contatos" class="rodape">
-        <h3>
-            <a href="#">Ludmila.MKT</a>
-        </h3>
-        <p>Todos Direitos Reservados!</p>
+    <section id="projetos" class="py-20 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Projetos em Destaque</h2>
+                    <p class="text-gray-500">Uma seleção do que tenho construído no GitHub.</p>
+                </div>
+                <a href="https://github.com/VanzoffDEV" target="_blank" class="text-blue-600 font-medium hover:underline text-sm">Ver GitHub Completo →</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fa-solid fa-graduation-cap text-4xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Portal Comunitário ADS</h3>
+                        <p class="text-gray-600 text-sm mb-4">Projeto acadêmico de extensão focado em impacto social e acessibilidade web.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-bold rounded-full">HTML/CSS</span>
+                            <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-bold rounded-full">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/VanzoffDEV/front-end-inter-faculdade-ads" class="inline-flex items-center text-sm font-bold text-gray-900 hover:gap-2 transition-all">Ver Repositório <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                    </div>
+                </div>
+
+                <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <div class="h-48 bg-gray-900 flex items-center justify-center">
+                        <i class="fa-solid fa-code text-4xl text-blue-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Lógica & Performance em C++</h3>
+                        <p class="text-gray-600 text-sm mb-4">Algoritmos e estruturas de dados complexas para resolução de problemas técnicos.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-purple-50 text-purple-600 text-xs font-bold rounded-full">C++</span>
+                            <span class="px-3 py-1 bg-gray-50 text-gray-600 text-xs font-bold rounded-full">Algoritmos</span>
+                        </div>
+                        <a href="https://github.com/VanzoffDEV/My-Projects-in-C-" class="inline-flex items-center text-sm font-bold text-gray-900 hover:gap-2 transition-all">Ver Repositório <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                    </div>
+                </div>
+
+                <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <div class="h-48 bg-blue-600 flex items-center justify-center">
+                        <i class="fa-solid fa-rocket text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Nosso Site (Agência)</h3>
+                        <p class="text-gray-600 text-sm mb-4">Desenvolvimento do site institucional da Agência Vanzoff, com foco em UX/UI.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-bold rounded-full">Web Design</span>
+                            <span class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-bold rounded-full">Negócios</span>
+                        </div>
+                        <a href="https://github.com/VanzoffDEV/Nosso-Site" class="inline-flex items-center text-sm font-bold text-gray-900 hover:gap-2 transition-all">Ver Repositório <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="py-12 bg-gray-900 text-white text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="mb-4 font-bold text-lg">Vamos trabalhar juntos?</p>
+            <div class="flex justify-center space-x-6 mb-8 text-2xl">
+                <a href="https://github.com/VanzoffDEV" class="hover:text-blue-400 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">© 2026 VanzoffDEV. Desenvolvido com foco em resultados.</p>
+        </div>
     </footer>
+
 </body>
 </html>
